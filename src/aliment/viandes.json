@@ -1,0 +1,403 @@
+[
+  {
+    "Nom": "Bœuf braisé, bœuf sauté, bouilli de bœuf",
+    "Enfants de moins de 18 mois": "20",
+    "Enfants de plus de 18 mois": "30",
+    "Enfants en maternelle": "50",
+    "Enfants en classe élémentaire": "70",
+    "Adolescents, adultes, et personnes  âgées si portage à domicile Personnes âgées en institution": {
+      "Déjeuner": "100",
+      "Dîner": "100"
+    }
+  },
+
+  {
+    "Nom": "Rôti de bœuf, steak",
+    "Enfants de moins de 18 mois": "20",
+    "Enfants de plus de 18 mois": "30",
+    "Enfants en maternelle": "40",
+    "Enfants en classe élémentaire": "60",
+    "Adolescents, adultes, et personnes  âgées si portage à domicile Personnes âgées en institution": {
+      "Déjeuner": "80",
+      "Dîner": "80"
+    }
+  },
+
+  {
+    "Nom": "Steak haché de bœuf, viande hachée de bœuf",
+    "Enfants de moins de 18 mois": "20",
+    "Enfants de plus de 18 mois": "30",
+    "Enfants en maternelle": "50",
+    "Enfants en classe élémentaire": "70",
+    "Adolescents, adultes, et personnes  âgées si portage à domicile Personnes âgées en institution": {
+      "Déjeuner": "100",
+      "Dîner": "100"
+    }
+  },
+
+  {
+    "Nom": "Hamburger de bœuf, autre préparation de viande de bœuf hachée",
+    "Enfants de moins de 18 mois": "0",
+    "Enfants de plus de 18 mois": "0",
+    "Enfants en maternelle": "50",
+    "Enfants en classe élémentaire": "70",
+    "Adolescents, adultes, et personnes  âgées si portage à domicile Personnes âgées en institution": {
+      "Déjeuner": "100",
+      "Dîner": "100"
+    }
+  },
+
+  {
+    "Nom": "Boulettes de bœuf, ou d’autre viande, de 30g pièce crues (à l'unité)",
+    "Enfants de moins de 18 mois": "0",
+    "Enfants de plus de 18 mois": "0",
+    "Enfants en maternelle": "2",
+    "Enfants en classe élémentaire": "3",
+    "Adolescents, adultes, et personnes  âgées si portage à domicile Personnes âgées en institution": {
+      "Déjeuner": "4",
+      "Dîner": "4"
+    }
+  },
+
+  {
+    "Nom": "Sauté de veau ou blanquette (sans os)",
+    "Enfants de moins de 18 mois": "20",
+    "Enfants de plus de 18 mois": "30",
+    "Enfants en maternelle": "50",
+    "Enfants en classe élémentaire": "70",
+    "Adolescents, adultes, et personnes  âgées si portage à domicile Personnes âgées en institution": {
+      "Déjeuner": "100",
+      "Dîner": "100"
+    }
+  },
+
+  {
+    "Nom": "Escalope de veau, rôti de veau",
+    "Enfants de moins de 18 mois": "20",
+    "Enfants de plus de 18 mois": "30",
+    "Enfants en maternelle": "40",
+    "Enfants en classe élémentaire": "60",
+    "Adolescents, adultes, et personnes  âgées si portage à domicile Personnes âgées en institution": {
+      "Déjeuner": "80",
+      "Dîner": "80"
+    }
+  },
+
+  {
+    "Nom": "Steak haché de veau, viande hachée de veau",
+    "Enfants de moins de 18 mois": "20",
+    "Enfants de plus de 18 mois": "30",
+    "Enfants en maternelle": "50",
+    "Enfants en classe élémentaire": "70",
+    "Adolescents, adultes, et personnes  âgées si portage à domicile Personnes âgées en institution": {
+      "Déjeuner": "100",
+      "Dîner": "100"
+    }
+  },
+  {
+    "Nom": "Préparation de viande de veau hachée",
+    "Enfants de moins de 18 mois": "0",
+    "Enfants de plus de 18 mois": "0",
+    "Enfants en maternelle": "50",
+    "Enfants en classe élémentaire": "70",
+    "Adolescents, adultes, et personnes  âgées si portage à domicile Personnes âgées en institution": {
+      "Déjeuner": "100",
+      "Dîner": "100"
+    }
+  },
+
+  {
+    "Nom": "Paupiette de veau",
+    "Enfants de moins de 18 mois": "0",
+    "Enfants de plus de 18 mois": "0",
+    "Enfants en maternelle": "50",
+    "Enfants en classe élémentaire": "70",
+    "Adolescents, adultes, et personnes  âgées si portage à domicile Personnes âgées en institution": {
+      "Déjeuner": "100",
+      "Dîner": "100"
+    }
+  },
+
+  {
+    "Nom": "Gigot",
+    "Enfants de moins de 18 mois": "20",
+    "Enfants de plus de 18 mois": "30",
+    "Enfants en maternelle": "40",
+    "Enfants en classe élémentaire": "60",
+    "Adolescents, adultes, et personnes  âgées si portage à domicile Personnes âgées en institution": {
+      "Déjeuner": "80",
+      "Dîner": "80"
+    }
+  },
+
+  {
+    "Nom": "Sauté (sans os)",
+    "Enfants de moins de 18 mois": "20",
+    "Enfants de plus de 18 mois": "30",
+    "Enfants en maternelle": "50",
+    "Enfants en classe élémentaire": "70",
+    "Adolescents, adultes, et personnes  âgées si portage à domicile Personnes âgées en institution": {
+      "Déjeuner": "100",
+      "Dîner": "100"
+    }
+  },
+
+  {
+    "Nom": "Côte d'agneau avec os",
+    "Enfants de moins de 18 mois": "0",
+    "Enfants de plus de 18 mois": "0",
+    "Enfants en maternelle": "0",
+    "Enfants en classe élémentaire": "80",
+    "Adolescents, adultes, et personnes  âgées si portage à domicile Personnes âgées en institution": {
+      "Déjeuner": "100",
+      "Dîner": "100"
+    }
+  },
+
+  {
+    "Nom": "Boulettes d'agneau-mouton de 30g pièce crues (à l'unité )",
+    "Enfants de moins de 18 mois": "0",
+    "Enfants de plus de 18 mois": "0",
+    "Enfants en maternelle": "2",
+    "Enfants en classe élémentaire": "3",
+    "Adolescents, adultes, et personnes  âgées si portage à domicile Personnes âgées en institution": {
+      "Déjeuner": "4",
+      "Dîner": "4"
+    }
+  },
+  {
+    "Nom": "Merguez de 50 g pièce crues (à l'unité)",
+    "Enfants de moins de 18 mois": "0",
+    "Enfants de plus de 18 mois": "0",
+    "Enfants en maternelle": "1",
+    "Enfants en classe élémentaire": "2",
+    "Adolescents, adultes, et personnes  âgées si portage à domicile Personnes âgées en institution": {
+      "Déjeuner": "2",
+      "Dîner": "2"
+    }
+  },
+  {
+    "Nom": "Rôti de porc, grillade (sans os)",
+    "Enfants de moins de 18 mois": "20",
+    "Enfants de plus de 18 mois": "30",
+    "Enfants en maternelle": "40",
+    "Enfants en classe élémentaire": "60",
+    "Adolescents, adultes, et personnes  âgées si portage à domicile Personnes âgées en institution": {
+      "Déjeuner": "80",
+      "Dîner": "100"
+    }
+  },
+
+  {
+    "Nom": "Sauté (sans os)",
+    "Enfants de moins de 18 mois": "20",
+    "Enfants de plus de 18 mois": "30",
+    "Enfants en maternelle": "50",
+    "Enfants en classe élémentaire": "70",
+    "Adolescents, adultes, et personnes  âgées si portage à domicile Personnes âgées en institution": {
+      "Déjeuner": "100",
+      "Dîner": "100"
+    }
+  },
+
+  {
+    "Nom": "Côte de porc (avec os)",
+    "Enfants de moins de 18 mois": "0",
+    "Enfants de plus de 18 mois": "0",
+    "Enfants en maternelle": "0",
+    "Enfants en classe élémentaire": "80",
+    "Adolescents, adultes, et personnes  âgées si portage à domicile Personnes âgées en institution": {
+      "Déjeuner": "100",
+      "Dîner": "100"
+    }
+  },
+
+  {
+    "Nom": "Jambon DD, palette de porc",
+    "Enfants de moins de 18 mois": "20",
+    "Enfants de plus de 18 mois": "30",
+    "Enfants en maternelle": "40",
+    "Enfants en classe élémentaire": "60",
+    "Adolescents, adultes, et personnes  âgées si portage à domicile Personnes âgées en institution": {
+      "Déjeuner": "80",
+      "Dîner": "80"
+    }
+  },
+
+  {
+    "Nom": "Andouillettes",
+    "Enfants de moins de 18 mois": "0",
+    "Enfants de plus de 18 mois": "0",
+    "Enfants en maternelle": "50",
+    "Enfants en classe élémentaire": "70",
+    "Adolescents, adultes, et personnes  âgées si portage à domicile Personnes âgées en institution": {
+      "Déjeuner": "100",
+      "Dîner": "100"
+    }
+  },
+
+  {
+    "Nom": "Saucisse de porc de 50 g pièce crue (à l'unité)",
+    "Enfants de moins de 18 mois": "0",
+    "Enfants de plus de 18 mois": "0",
+    "Enfants en maternelle": "1",
+    "Enfants en classe élémentaire": "2",
+    "Adolescents, adultes, et personnes  âgées si portage à domicile Personnes âgées en institution": {
+      "Déjeuner": "2",
+      "Dîner": "2"
+    }
+  },
+  {
+    "Nom": "Rôti, escalope et aiguillettes de volaille, blanc de poulet",
+    "Enfants de moins de 18 mois": "20",
+    "Enfants de plus de 18 mois": "30",
+    "Enfants en maternelle": "40",
+    "Enfants en classe élémentaire": "60",
+    "Adolescents, adultes, et personnes  âgées si portage à domicile Personnes âgées en institution": {
+      "Déjeuner": "80",
+      "Dîner": "80"
+    }
+  },
+
+  {
+    "Nom": "Sauté et émincé de volaille",
+    "Enfants de moins de 18 mois": "20",
+    "Enfants de plus de 18 mois": "30",
+    "Enfants en maternelle": "50",
+    "Enfants en classe élémentaire": "70",
+    "Adolescents, adultes, et personnes  âgées si portage à domicile Personnes âgées en institution": {
+      "Déjeuner": "100",
+      "Dîner": "100"
+    }
+  },
+
+  {
+    "Nom": "Jambon de volaille",
+    "Enfants de moins de 18 mois": "20",
+    "Enfants de plus de 18 mois": "30",
+    "Enfants en maternelle": "40",
+    "Enfants en classe élémentaire": "60",
+    "Adolescents, adultes, et personnes  âgées si portage à domicile Personnes âgées en institution": {
+      "Déjeuner": "80",
+      "Dîner": "80"
+    }
+  },
+
+  {
+    "Nom": "Cordon bleu ou pané façon cordon bleu",
+    "Enfants de moins de 18 mois": "0",
+    "Enfants de plus de 18 mois": "0",
+    "Enfants en maternelle": "50",
+    "Enfants en classe élémentaire": "70",
+    "Adolescents, adultes, et personnes  âgées si portage à domicile Personnes âgées en institution": {
+      "Déjeuner": "100",
+      "Dîner": "100"
+    }
+  },
+
+  {
+    "Nom": "Cuisse, haut de cuisse, pilon de volaille (avec os)",
+    "Enfants de moins de 18 mois": "20",
+    "Enfants de plus de 18 mois": "30",
+    "Enfants en maternelle": "100",
+    "Enfants en classe élémentaire": "140",
+    "Adolescents, adultes, et personnes  âgées si portage à domicile Personnes âgées en institution": {
+      "Déjeuner": "140",
+      "Dîner": "140"
+    }
+  },
+
+  {
+    "Nom": "Brochette",
+    "Enfants de moins de 18 mois": "0",
+    "Enfants de plus de 18 mois": "0",
+    "Enfants en maternelle": "50",
+    "Enfants en classe élémentaire": "70",
+    "Adolescents, adultes, et personnes  âgées si portage à domicile Personnes âgées en institution": {
+      "Déjeuner": "100",
+      "Dîner": "100"
+    }
+  },
+
+  {
+    "Nom": "Paupiette de volaille",
+    "Enfants de moins de 18 mois": "0",
+    "Enfants de plus de 18 mois": "0",
+    "Enfants en maternelle": "50",
+    "Enfants en classe élémentaire": "70",
+    "Adolescents, adultes, et personnes  âgées si portage à domicile Personnes âgées en institution": {
+      "Déjeuner": "100",
+      "Dîner": "100"
+    }
+  },
+
+  {
+    "Nom": "Fingers, beignets, nuggets de 20 g pièce cuits",
+    "Enfants de moins de 18 mois": "0",
+    "Enfants de plus de 18 mois": "0",
+    "Enfants en maternelle": "2",
+    "Enfants en classe élémentaire": "3",
+    "Adolescents, adultes, et personnes  âgées si portage à domicile Personnes âgées en institution": {
+      "Déjeuner": "5",
+      "Dîner": "5"
+    }
+  },
+  {
+    "Nom": "Escalope panée de volaille ou autre viande",
+    "Enfants de moins de 18 mois": "0",
+    "Enfants de plus de 18 mois": "0",
+    "Enfants en maternelle": "50",
+    "Enfants en classe élémentaire": "70",
+    "Adolescents, adultes, et personnes  âgées si portage à domicile Personnes âgées en institution": {
+      "Déjeuner": "100",
+      "Dîner": "100"
+    }
+  },
+
+  {
+    "Nom": "Cuisse ou demi-cuisse de lapin (avec os)",
+    "Enfants de moins de 18 mois": "0",
+    "Enfants de plus de 18 mois": "0",
+    "Enfants en maternelle": "100",
+    "Enfants en classe élémentaire": "140",
+    "Adolescents, adultes, et personnes  âgées si portage à domicile Personnes âgées en institution": {
+      "Déjeuner": "140",
+      "Dîner": "140"
+    }
+  },
+
+  {
+    "Nom": "Sauté et émincé de lapin (sans os)",
+    "Enfants de moins de 18 mois": "20",
+    "Enfants de plus de 18 mois": "30",
+    "Enfants en maternelle": "50",
+    "Enfants en classe élémentaire": "70",
+    "Adolescents, adultes, et personnes  âgées si portage à domicile Personnes âgées en institution": {
+      "Déjeuner": "100",
+      "Dîner": "100"
+    }
+  },
+
+  {
+    "Nom": "Paupiette de lapin",
+    "Enfants de moins de 18 mois": "0",
+    "Enfants de plus de 18 mois": "0",
+    "Enfants en maternelle": "50",
+    "Enfants en classe élémentaire": "70",
+    "Adolescents, adultes, et personnes  âgées si portage à domicile Personnes âgées en institution": {
+      "Déjeuner": "100",
+      "Dîner": "100"
+    }
+  },
+  {
+    "Nom": "g pièce crue (à l’unité)",
+    "Enfants de moins de 18 mois": "0",
+    "Enfants de plus de 18 mois": "0",
+    "Enfants en maternelle": "1",
+    "Enfants en classe élémentaire": "2",
+    "Adolescents, adultes, et personnes  âgées si portage à domicile Personnes âgées en institution": {
+      "Déjeuner": "2",
+      "Dîner": "2"
+    }
+  }
+]

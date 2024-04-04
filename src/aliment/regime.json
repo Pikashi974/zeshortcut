@@ -4,5 +4,17 @@
     "Glucides": 45,
     "Proteines": 20,
     "Lipides": 35
+  },
+  {
+    "Nom": "Zone Diet",
+    "Glucides": 40,
+    "Proteines": 30,
+    "Lipides": 30
+  },
+  {
+    "Nom": "Pauvre en graisse",
+    "Glucides": 60,
+    "Proteines": 25,
+    "Lipides": 15
   }
 ]
