@@ -1,0 +1,22 @@
+{
+  "name": "zeshortcut",
+  "version": "1.0.0",
+  "description": "The back of the shortcut app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Jeremy Payet",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://pikashi974.github.io/zeshortcut/"
+  },
+  "engines": {
+    "node": "20.9.0"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
