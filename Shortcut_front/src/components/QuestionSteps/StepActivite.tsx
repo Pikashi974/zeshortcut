@@ -3,7 +3,7 @@ import { useWizard } from "react-use-wizard";
 import { ActiviteContext } from "../../App";
 
 const StepActivite = () => {
-  const { handleStep, nextStep } = useWizard();
+  const { handleStep, nextStep, previousStep } = useWizard();
 
   const { setActivite } = useContext(ActiviteContext);
 
@@ -24,9 +24,21 @@ const StepActivite = () => {
               placeholder="Activite ..."
               className="bg-green-50 p-2 rounded-xl w-[60%] mb-5 border-2 border-green-900"
             />
-
             {/* BUTTON */}
-              <button className="bg-green-800 py-3 px-4 w-[60%] text-slate-100 rounded-xl" onClick={() => nextStep()}>Suivant</button>
+            <div className="flex gap-4 w-[60%]">
+              <button
+                className="bg-green-800 py-3 px-4 text-slate-100 rounded-xl flex-1"
+                onClick={() => previousStep()}
+              >
+                Précédent
+              </button>
+              <button
+                className="bg-green-800 py-3 px-4 text-slate-100 rounded-xl flex-1"
+                onClick={() => nextStep()}
+              >
+                Suivant
+              </button>
+            </div>{" "}
           </div>
         </div>
 

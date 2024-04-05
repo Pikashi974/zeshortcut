@@ -3,7 +3,7 @@ import { useWizard } from "react-use-wizard";
 import { GenreContext } from "../../App";
 
 const StepGenre = () => {
-  const { nextStep } = useWizard();
+  const { nextStep, previousStep } = useWizard();
 
   const { setGenre } = useContext(GenreContext);
 
@@ -25,12 +25,20 @@ const StepGenre = () => {
             </div>
 
             {/* BUTTON */}
-            <button
-              className="bg-green-800 py-3 px-4 w-[60%] text-slate-100 rounded-xl"
-              onClick={() => nextStep()}
-            >
-              Suivant
-            </button>
+            <div className="flex gap-4 w-[60%]">
+              <button
+                className="bg-green-800 py-3 px-4 text-slate-100 rounded-xl flex-1"
+                onClick={() => previousStep()}
+              >
+                Précédent
+              </button>
+              <button
+                className="bg-green-800 py-3 px-4 text-slate-100 rounded-xl flex-1"
+                onClick={() => nextStep()}
+              >
+                Suivant
+              </button>
+            </div>
           </div>
         </div>
 
