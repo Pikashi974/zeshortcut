@@ -1,0 +1,226 @@
+[
+  {
+    "nom": "Pain",
+    "calories": 10,
+    "proteines": 10,
+    "glucides": 10,
+    "lipides": 10,
+    "etiquette": ""
+  },
+  {
+    "nom": "Pain",
+    "calories": 276,
+    "proteines": 9,
+    "glucides": 1.6,
+    "lipides": 49,
+    "etiquette": ""
+  },
+  {
+    "nom": "Mais",
+    "calories": 246,
+    "proteines": 3.41,
+    "glucides": 1.5,
+    "lipides": 16,
+    "etiquette": ""
+  },
+  {
+    "nom": "Raisin sec",
+    "calories": 320,
+    "proteines": 3.1,
+    "glucides": 0,
+    "lipides": 79,
+    "etiquette": ""
+  },
+  {
+    "nom": "Lentille",
+    "calories": 112,
+    "proteines": 9,
+    "glucides": 0.2,
+    "lipides": 20,
+    "etiquette": ""
+  },
+  {
+    "nom": "Patate",
+    "calories": 80.2,
+    "proteines": 1.8,
+    "glucides": 0.1,
+    "lipides": 16.7,
+    "etiquette": ""
+  },
+  {
+    "nom": "Salade",
+    "calories": 16,
+    "proteines": 1.3,
+    "glucides": 0.2,
+    "lipides": 1.3,
+    "etiquette": ""
+  },
+  {
+    "nom": "Choux",
+    "calories": 25,
+    "proteines": 1.3,
+    "glucides": 0.6,
+    "lipides": 1.97,
+    "etiquette": ""
+  },
+  {
+    "nom": "Concombre",
+    "calories": 14.7,
+    "proteines": 0.56,
+    "glucides": 0.5,
+    "lipides": 2.23,
+    "etiquette": ""
+  },
+  {
+    "nom": "Tomate",
+    "calories": 19.3,
+    "proteines": 0.8,
+    "glucides": 0.5,
+    "lipides": 3.3,
+    "etiquette": ""
+  },
+  {
+    "nom": "Viande",
+    "calories": 185,
+    "proteines": 26,
+    "glucides": 0.5,
+    "lipides": 0,
+    "etiquette": ""
+  },
+  {
+    "nom": "Poisson",
+    "calories": 154,
+    "proteines": 22,
+    "glucides": 4.4,
+    "lipides": 0,
+    "etiquette": ""
+  },
+  {
+    "nom": "Œuf",
+    "calories": 145,
+    "proteines": 13,
+    "glucides": 1.4,
+    "lipides": 1.1,
+    "etiquette": ""
+  },
+  {
+    "nom": "Lait de soja",
+    "calories": 64,
+    "proteines": 3.3,
+    "glucides": 1,
+    "lipides": 6,
+    "etiquette": ""
+  },
+  {
+    "nom": "Noix",
+    "calories": 652,
+    "proteines": 15,
+    "glucides": 47,
+    "lipides": 14,
+    "etiquette": ""
+  },
+  {
+    "nom": "Graines",
+    "calories": 653,
+    "proteines": 30,
+    "glucides": 21,
+    "lipides": 11,
+    "etiquette": ""
+  },
+  {
+    "nom": "Seintan",
+    "calories": 134,
+    "proteines": 75,
+    "glucides": 0.8,
+    "lipides": 14,
+    "etiquette": ""
+  },
+  {
+    "nom": "Feves seche",
+    "calories": 61,
+    "proteines": 26.6,
+    "glucides": 1.4,
+    "lipides": 9.35,
+    "etiquette": ""
+  },
+  {
+    "nom": "Yaourt",
+    "calories": 45,
+    "proteines": 10,
+    "glucides": 0,
+    "lipides": 3.96,
+    "etiquette": ""
+  },
+  {
+    "nom": "Saumon",
+    "calories": 124,
+    "proteines": 20,
+    "glucides": 12.6,
+    "lipides": 0,
+    "etiquette": ""
+  },
+  {
+    "nom": "Graines de chia",
+    "calories": 435,
+    "proteines": 16.5,
+    "glucides": 30,
+    "lipides": 5,
+    "etiquette": ""
+  },
+  {
+    "nom": "Letchi",
+    "calories": 81,
+    "proteines": 1.13,
+    "glucides": 0.5,
+    "lipides": 16.1,
+    "etiquette": ""
+  },
+  {
+    "nom": "Avocat",
+    "calories": 205,
+    "proteines": 2,
+    "glucides": 1.8,
+    "lipides": 9,
+    "etiquette": ""
+  },
+  {
+    "nom": "Amande",
+    "calories": 600,
+    "proteines": 21,
+    "glucides": 12,
+    "lipides": 22,
+    "etiquette": ""
+  },
+  {
+    "nom": "Mangue",
+    "calories": 73,
+    "proteines": 0.8,
+    "glucides": 0.1,
+    "lipides": 15,
+    "etiquette": ""
+  },
+  {
+    "nom": "Fromage",
+    "calories": 200,
+    "proteines": 25,
+    "glucides": 0.9,
+    "lipides": 1.3,
+    "etiquette": ""
+  },
+  {
+    "nom": "Foie de morue",
+    "calories": 619,
+    "proteines": 0,
+    "glucides": 23,
+    "lipides": 0,
+    "etiquette": ""
+  },
+  {
+    "nom": "Carotte",
+    "calories": 41.6,
+    "proteines": 0.9,
+    "glucides": 0.1,
+    "lipides": 10,
+    "etiquette": ""
+  }
+]
