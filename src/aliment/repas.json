@@ -30,5 +30,43 @@
       "Fromage": 1,
       "Pain": 1
     }
+  },
+  {
+    "nom": "Petit-Dejeuner Dur",
+    "etiquette": ["Petit-déjeuner"],
+    "recette": {
+      "Graines": 2,
+      "Mais": 2,
+      "Noix": 2,
+      "Lait de soja": 2
+    }
+  },
+
+  {
+    "nom": "Dejeuner Dur",
+    "etiquette": ["Déjeuner"],
+    "recette": {
+      "Viande": 2,
+      "Oeuf": 2,
+      "Patate": 2
+    }
+  },
+
+  {
+    "nom": "Colation Dur",
+    "etiquette": ["Colation"],
+    "recette": {
+      "Raisin sec": 1,
+      "Amande": 2
+    }
+  },
+
+  {
+    "nom": "Diner Dur",
+    "etiquette": ["Diner"],
+    "recette": {
+      "Saumon": 1,
+      "Seintan": 1
+    }
   }
 ]
