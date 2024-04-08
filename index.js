@@ -35,27 +35,27 @@ app.get("/repas", async (req, res) => {
 app.get("/src/js/index.js", function (req, res) {
   res.sendFile(path.join(__dirname + "/src/js/index.js"));
 });
-app.get("/repas/maigrir", async (req, res) => {
+app.post("/repas/maigrir", async (req, res) => {
   var data = require("./src/aliment/repas.json");
   res.send(
     data.filter(
       (repas) =>
-        calcCalorieRepas(repas) <= req.body.calories &&
-        calcGlucidesRepas(repas) <= req.body.glucides &&
-        calcLipidesRepas(repas) <= req.body.lipides &&
-        calcProteinesRepas(repas) <= req.body.proteines
+        calcCalorieRepas(repas) <= parseFloat(req.body.calories) &&
+        calcGlucidesRepas(repas) <= parseFloat(req.body.glucides) &&
+        calcLipidesRepas(repas) <= parseFloat(req.body.lipides) &&
+        calcProteinesRepas(repas) <= parseFloat(req.body.proteines)
     )
   );
 });
-app.get("/repas/grossir", async (req, res) => {
+app.post("/repas/grossir", async (req, res) => {
   var data = require("./src/aliment/repas.json");
   res.send(
     data.filter(
       (repas) =>
-        calcCalorieRepas(repas) >= req.body.calories &&
-        calcGlucidesRepas(repas) >= req.body.glucides &&
-        calcLipidesRepas(repas) >= req.body.lipides &&
-        calcProteinesRepas(repas) >= req.body.proteines
+        calcCalorieRepas(repas) >= parseFloat(req.body.calories) &&
+        calcGlucidesRepas(repas) >= parseFloat(req.body.glucides) &&
+        calcLipidesRepas(repas) >= parseFloat(req.body.lipides) &&
+        calcProteinesRepas(repas) >= parseFloat(req.body.proteines)
     )
   );
 });
