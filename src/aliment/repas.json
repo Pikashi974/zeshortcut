@@ -1,0 +1,34 @@
+[
+  {
+    "nom": "Petit-déjeuner simple",
+    "etiquette": ["Petit-déjeuner"],
+    "recette": {
+      "Oeuf": 2,
+      "Pain": 1
+    }
+  },
+  {
+    "nom": "Repas simple",
+    "etiquette": ["Déjeuner", "Diner"],
+    "recette": {
+      "Viande": 1,
+      "Lentille": 1
+    }
+  },
+  {
+    "nom": "Repas simple sans viande",
+    "etiquette": ["Déjeuner", "Diner"],
+    "recette": {
+      "Saumon": 1,
+      "Lentille": 1
+    }
+  },
+  {
+    "nom": "Pain Fromage",
+    "etiquette": ["Colation"],
+    "recette": {
+      "Fromage": 1,
+      "Pain": 1
+    }
+  }
+]
