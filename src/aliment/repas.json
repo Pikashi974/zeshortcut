@@ -31,6 +31,8 @@
       "Pain": 1
     }
   },
+
+
   {
     "nom": "Petit-Dejeuner Dur",
     "etiquette": ["Petit-déjeuner"],
@@ -68,5 +70,44 @@
       "Saumon": 1,
       "Seintan": 1
     }
+  },
+
+
+  {
+    "nom": "Diner Dur",
+    "etiquette": ["Diner"],
+    "recette": {
+      "Saumon": 1,
+      "Seintan": 1
+    }
+  },
+
+  {
+    "nom": "Fruité",
+    "etiquette": ["Petit-déjeuner"],
+    "recette": {
+      "Saumon": 1,
+      "Seintan": 1
+    }
+  },
+
+  {
+    "nom": "Vegi",
+    "etiquette": ["Déjeuner"],
+    "recette": {
+      "Tomate": 1,
+      "Concombre": 1
+    }
+  },
+
+  {
+    "nom": "Salade fraiche",
+    "etiquette": ["Diner"],
+    "recette": {
+      "Salade": 1,
+      "Choux": 1
+    }
   }
+
+
 ]

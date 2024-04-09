@@ -3,8 +3,8 @@
     "nom": "Pain",
     "calories": 2760,
     "proteines": 90,
-    "glucides": 16,
-    "lipides": 490
+    "glucides": 490,
+    "lipides": 16
   },
   {
     "nom": "Mais",
@@ -23,23 +23,23 @@
   {
     "nom": "Lentille",
     "calories": 1120,
-    "proteines": 90,
-    "glucides": 2,
+    "proteines": 900,
+    "glucides": 20,
     "lipides": 200
   },
   {
     "nom": "Patate",
     "calories": 802,
-    "proteines": 18,
-    "glucides": 1,
+    "proteines": 180,
+    "glucides": 10,
     "lipides": 167
   },
   {
     "nom": "Salade",
-    "calories": 16,
-    "proteines": 13,
-    "glucides": 2,
-    "lipides": 13
+    "calories": 160,
+    "proteines": 130,
+    "glucides": 20,
+    "lipides": 130
   },
   {
     "nom": "Choux",
