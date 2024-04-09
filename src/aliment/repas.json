@@ -4,31 +4,32 @@
     "etiquette": ["Petit-déjeuner"],
     "recette": {
       "Oeuf": 2,
-      "Pain": 1
+      "Pain": 1,
+      "Banane": 1
     }
   },
   {
     "nom": "Repas simple",
     "etiquette": ["Déjeuner", "Diner"],
     "recette": {
-      "Viande": 1,
-      "Lentille": 1
+      "Viande": 10,
+      "Lentille": 10
     }
   },
   {
     "nom": "Repas simple sans viande",
     "etiquette": ["Déjeuner", "Diner"],
     "recette": {
-      "Saumon": 1,
-      "Lentille": 1
+      "Saumon": 10,
+      "Lentille": 10
     }
   },
   {
     "nom": "Pain Fromage",
-    "etiquette": ["Colation"],
+    "etiquette": ["Petit-déjeuner"],
     "recette": {
-      "Fromage": 1,
-      "Pain": 1
+      "Fromage": 10,
+      "Pain": 10
     }
   },
 
@@ -54,10 +55,10 @@
   },
 
   {
-    "nom": "Colation Dur",
-    "etiquette": ["Colation"],
+    "nom": "Petit-déjeuner Dur",
+    "etiquette": ["Petit-déjeuner"],
     "recette": {
-      "Raisin sec": 1,
+      "Raisin sec": 10,
       "Amande": 2
     }
   },
@@ -66,7 +67,7 @@
     "nom": "Diner Dur",
     "etiquette": ["Diner"],
     "recette": {
-      "Saumon": 1,
+      "Saumon": 10,
       "Seintan": 2
     }
   },
@@ -75,8 +76,8 @@
     "nom": "Diner Dur",
     "etiquette": ["Diner"],
     "recette": {
-      "Saumon": 1,
-      "Seintan": 1
+      "Saumon": 10,
+      "Seintan": 10
     }
   },
 
@@ -84,8 +85,8 @@
     "nom": "Fruité",
     "etiquette": ["Petit-déjeuner"],
     "recette": {
-      "Saumon": 1,
-      "Seintan": 1
+      "Saumon": 10,
+      "Seintan": 10
     }
   },
 
@@ -93,8 +94,8 @@
     "nom": "Vegi",
     "etiquette": ["Déjeuner"],
     "recette": {
-      "Tomate": 1,
-      "Concombre": 1
+      "Tomate": 10,
+      "Concombre": 10
     }
   },
 
@@ -102,8 +103,8 @@
     "nom": "Salade fraiche",
     "etiquette": ["Diner"],
     "recette": {
-      "Salade": 1,
-      "Choux": 1
+      "Salade": 10,
+      "Choux": 10
     }
   },
 
@@ -111,8 +112,8 @@
     "nom": "PDT constant",
     "etiquette": ["Petit-déjeuner"],
     "recette": {
-      "Graines": 0.3,
-      "Oeuf": 0.2
+      "Graines": 3,
+      "Oeuf": 2
     }
   },
 
@@ -120,8 +121,8 @@
     "nom": "Dej constant",
     "etiquette": ["Déjeuner"],
     "recette": {
-      "Poisson": 0.3,
-      "Amande": 0.2
+      "Poisson": 3,
+      "Amande": 2
     }
   },
 
@@ -129,8 +130,8 @@
     "nom": "Din constant",
     "etiquette": ["Diner"],
     "recette": {
-      "Amande": 0.3,
-      "Fromage": 0.1
+      "Amande": 3,
+      "Fromage": 10
     }
   },
 
@@ -138,18 +139,18 @@
     "nom": "Dejeuner 666",
     "etiquette": ["Déjeuner"],
     "recette": {
-      "Yaourt": 1,
-      "Concombre": 1
+      "Banane": 3,
+      "Seintan": 1,
+      "Patate": 3
     }
   },
   {
     "nom": "Diner 666",
     "etiquette": ["Diner"],
     "recette": {
-      "Yaourt": 1,
-      "Avocat": 1
+      "Banane": 3,
+      "Seintan": 1,
+      "Patate": 3
     }
   }
-
-
 ]

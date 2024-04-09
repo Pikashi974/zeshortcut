@@ -42,10 +42,10 @@ app.post("/repas", async (req, res) => {
   var data = require("./src/aliment/repas.json");
   let listeRepas = data.filter(
     (repas) =>
-      0.8 < calcCalorieRepas(repas) / parseFloat(req.body.calories) < 1.2 &&
-      0.8 < calcGlucidesRepas(repas) / parseFloat(req.body.glucides) < 1.2 &&
-      0.8 < calcLipidesRepas(repas) / parseFloat(req.body.lipides) < 1.2 &&
-      0.8 < calcProteinesRepas(repas) / parseFloat(req.body.proteines) < 1.2
+      range((3 * calcCalorieRepas(repas)) / parseFloat(req.body.calories)) &&
+      range(calcGlucidesRepas(repas) / parseFloat(req.body.glucides)) &&
+      range(calcLipidesRepas(repas) / parseFloat(req.body.lipides)) &&
+      range(calcProteinesRepas(repas) / parseFloat(req.body.proteines))
   );
   sendMail(req, listeRepas);
   res.send(listeRepas);
@@ -173,12 +173,17 @@ async function sendMail(req, liste) {
                   <tbody>
                     ${["Petit-déjeuner", "Déjeuner", "Diner"].map((repas) => {
                       let texte = "";
-                      let chosenRepas = liste.find(
+                      let chosenRepas = liste.filter(
                         (element) =>
                           element.etiquette.includes(repas) &&
                           listeChosen.includes(element.nom) == false
                       );
+
                       if (chosenRepas) {
+                        let rand = Math.floor(
+                          Math.random() * listeChosen.length
+                        );
+                        chosenRepas = chosenRepas[rand];
                         listeChosen.push(chosenRepas.nom);
                         texte += `<tr>
                       <td class="es-m-p20b" align="left" style="padding:0;Margin:0;width:270px">
@@ -208,7 +213,13 @@ async function sendMail(req, liste) {
                                   ${Object.keys(chosenRepas.recette)
                                     .map(
                                       (element) =>
-                                        chosenRepas.recette[element] +
+                                        (chosenRepas.recette[element] >= 10
+                                          ? `${
+                                              chosenRepas.recette[element] / 10
+                                            }kg`
+                                          : `${
+                                              100 * chosenRepas.recette[element]
+                                            }g`) +
                                         " " +
                                         element
                                     )
@@ -257,7 +268,7 @@ function calcCalorieRepas(repas) {
   let totalCal = 0;
   ingredients.forEach((element) => {
     let aliment = data.filter((obj) => obj.nom == element)[0];
-    totalCal += aliment.calories;
+    totalCal += repas.recette[element] * aliment.calories;
   });
   return totalCal;
 }
@@ -267,7 +278,7 @@ function calcLipidesRepas(repas) {
   let totalCal = 0;
   ingredients.forEach((element) => {
     let aliment = data.filter((obj) => obj.nom == element)[0];
-    totalCal += aliment.lipides;
+    totalCal += repas.recette[element] * aliment.lipides;
   });
   return totalCal;
 }
@@ -277,7 +288,7 @@ function calcGlucidesRepas(repas) {
   let totalCal = 0;
   ingredients.forEach((element) => {
     let aliment = data.filter((obj) => obj.nom == element)[0];
-    totalCal += aliment.glucides;
+    totalCal += repas.recette[element] * aliment.glucides;
   });
   return totalCal;
 }
@@ -287,7 +298,10 @@ function calcProteinesRepas(repas) {
   let totalCal = 0;
   ingredients.forEach((element) => {
     let aliment = data.filter((obj) => obj.nom == element)[0];
-    totalCal += aliment.proteines;
+    totalCal += repas.recette[element] * aliment.proteines;
   });
   return totalCal;
+}
+function range(valeur) {
+  return 0.8 <= valeur && valeur <= 1.2;
 }
