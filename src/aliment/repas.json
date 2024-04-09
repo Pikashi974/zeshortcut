@@ -132,5 +132,24 @@
       "Amande": 0.3,
       "Fromage": 0.1
     }
+  },
+
+  {
+    "nom": "Dejeuner 666",
+    "etiquette": ["Déjeuner"],
+    "recette": {
+      "Yaourt": 1,
+      "Concombre": 1
+    }
+  },
+  {
+    "nom": "Diner 666",
+    "etiquette": ["Diner"],
+    "recette": {
+      "Yaourt": 1,
+      "Avocat": 1
+    }
   }
+
+
 ]
