@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import { useWizard } from "react-use-wizard";
 import { ActiviteContext } from "../../App";
+import { motion } from "framer-motion";
+
 
 const StepActivite = () => {
   const { handleStep, nextStep, previousStep } = useWizard();
@@ -8,8 +10,15 @@ const StepActivite = () => {
   const { setActivite } = useContext(ActiviteContext);
 
   handleStep(() => {
-    setActivite((document.getElementsByName("activite")[0] as HTMLInputElement).value);
+    const activite = (document.getElementsByName("activite")[0] as HTMLInputElement).value;
+    setActivite(activite);
   });
+
+  onkeydown = (event) => {
+    if (event.key === "Enter") {
+      nextStep();
+    }
+  }
 
   return (
     <div className="flex flex-col min-h-screen fontFasterStroker">
@@ -29,18 +38,24 @@ const StepActivite = () => {
             </select>
             {/* BUTTON */}
             <div className="flex gap-4 w-[60%]">
-              <button
-                className="bg-green-800 py-3 px-4 text-slate-100 rounded-xl flex-1"
+              <motion.button
+                className="bg-green-800 py-3 px-4 w-[60%] text-slate-100 rounded-xl"
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
                 onClick={() => previousStep()}
               >
                 Précédent
-              </button>
-              <button
-                className="bg-green-800 py-3 px-4 text-slate-100 rounded-xl flex-1"
+              </motion.button>
+              <motion.button
+                className="bg-green-800 py-3 px-4 w-[60%] text-slate-100 rounded-xl"
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
                 onClick={() => nextStep()}
               >
                 Suivant
-              </button>
+              </motion.button>
             </div>{" "}
           </div>
         </div>

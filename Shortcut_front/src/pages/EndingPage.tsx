@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import {motion} from "framer-motion"
 
 function EndingPage() {
     const navigate = useNavigate();
@@ -17,11 +18,16 @@ function EndingPage() {
 
       <div className=" flex flex-col justify-center p-4 gap-16 bg-slate-50 pr-20">
         {/* CARD */}
-        <div className="flex flex-col gap-4 bg-green-300 justify-center items-center h-[90vh] rounded-xl py-10 px-6">
-          <p className="text-4xl mb-8 w-[60%] text-center text-red-600">
+        <motion.div
+          initial={{ opacity: 0, translateY: 100 }}
+          animate={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.5 }}
+          className="flex flex-col gap-10 bg-green-300 justify-center items-center h-[90vh] rounded-xl py-10 px-6"
+        >
+          <p className="text-5xl mb-8 w-[60%] text-center text-red-600 animate-bounce">
             Félicitation 🥳
           </p>
-          <p className="text-lg text-gray-500 w-[70%] text-center">
+          <p className="text-2xl text-slate-800 w-[70%] text-center">
             Tu vas recevoir ton régime totalement personalisé par mail ! 🥗
           </p>
 
@@ -30,12 +36,18 @@ function EndingPage() {
           {/* ======= BOUTON */}
           <div className="flex flex-col gap-10 justify-center items-center">
             <div className="flex hover:scale-105 justify-between gap-2 items-center hover:cursor-pointer">
-              <p className="text-2xl text-red-600" onClick={renvoiAccueil}>
+              <motion.button
+                className="bg-red-500 py-3 px-4 text-slate-100 rounded-xl text-4xl"
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                onClick={() => renvoiAccueil()}
+              >
                 Retour à l'accueil
-              </p>
+              </motion.button>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

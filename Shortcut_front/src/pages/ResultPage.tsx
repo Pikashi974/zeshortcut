@@ -2,6 +2,8 @@ import { useContext } from "react";
 import { EmailContext, NomContext, CalorieContext } from "../App";
 import * as api from "../utils/api";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
+
 
 function ResultPage() {
   const { nom } = useContext(NomContext);
@@ -11,13 +13,7 @@ function ResultPage() {
 
   const perdrePoids = () => {
 
-    // api.getMeals({
-    //   nom: nom,
-    //   email: email,
-    //   calorie: calorie,
-    // });
-
-    console.log({
+    api.getMeals({
       nom: nom,
       email: email,
       calorie: calorie - 300,
@@ -28,13 +24,7 @@ function ResultPage() {
 
   const gagnerMasse = () => {
 
-    // api.getMeals({
-    //   nom: nom,
-    //   email: email,
-    //   calorie: calorie,
-    // });
-
-    console.log({
+    api.getMeals({
       nom: nom,
       email: email,
       calorie: calorie + 300,
@@ -52,7 +42,12 @@ function ResultPage() {
 
       <div className=" flex flex-col justify-center p-4 gap-16 bg-slate-50 pr-20">
         {/* CARD */}
-        <div className="flex flex-col gap-4 bg-green-300 items-center h-[90vh] rounded-xl py-10 px-6">
+        <motion.div
+          initial={{ opacity: 0, translateY: 100 }}
+          animate={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.5 }}
+          className="flex flex-col gap-4 bg-green-300 items-center h-[90vh] rounded-xl py-10 px-6"
+        >
           <p className="text-3xl mb-8 w-[60%] text-center">
             Tu as actuellement un besoin calorique de
           </p>
@@ -66,23 +61,29 @@ function ResultPage() {
 
           {/* ======= BOUTON */}
           <div className="flex flex-col gap-10 justify-center items-center">
-            <div
-              className="flex hover:scale-105 justify-between gap-2 items-center hover:cursor-pointer"
+            <motion.div
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.9 }}
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
+              className="flex justify-between gap-2 items-center hover:cursor-pointer"
               onClick={perdrePoids}
             >
               <img className="w-11" src="/images/icon1.png" />
               <p className="text-3xl">Perdre du poids</p>
-            </div>
+            </motion.div>
 
-            <div
-              className="flex hover:scale-105 justify-between gap-2 items-center hover:cursor-pointer"
+            <motion.div
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.9 }}
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
+              className="flex  justify-between gap-2 items-center hover:cursor-pointer"
               onClick={gagnerMasse}
             >
               <img className="w-11" src="/images/icon2.png" />
               <p className="text-3xl">Gagner en masse</p>
-            </div>
+            </motion.div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

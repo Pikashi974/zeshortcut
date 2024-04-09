@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { useWizard } from "react-use-wizard";
 import { GenreContext } from "../../App";
+import {motion} from "framer-motion";
 
 const StepGenre = () => {
   const { nextStep, previousStep } = useWizard();
@@ -25,31 +26,40 @@ const StepGenre = () => {
           <div className="flex flex-col gap-4 p-2 mb-4">
             <p className="text-3xl my-10">Choisis ton sexe:</p>
             <div className="flex gap-2 text-2xl">
-              <div
-                className="flex-1 hover:scale-105 flex cursor-pointer items-center justify-center bg-yellow-200 rounded-xl p-2 w-[60%] h-[30vh]"
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                className="flex-1 brightness-50 hover:brightness-100 flex flex-col cursor-pointer items-center justify-center bg-yellow-200 rounded-xl p-2 w-[40%]"
                 onClick={nextHomme}
               >
-                <p>🧑</p>
+                <img src="/images/man.png" className="h-[60%] mb-3" />
                 <p>Homme</p>
-              </div>
+              </motion.div>
 
-              <div
-                className="flex-1 hover:scale-105 flex cursor-pointer items-center justify-center bg-green-200 rounded-xl p-2 w-[60%]"
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                className="flex-1 brightness-50 hover:brightness-100 flex flex-col cursor-pointer items-center justify-center bg-green-200 rounded-xl p-2 w-[40%]"
                 onClick={nextFemme}
               >
-                <p>👩</p>
+                <img src="/images/woman.png" className="h-[60%] mb-3" />
                 <p>Femme</p>
-              </div>
+              </motion.div>
             </div>
 
             {/* BUTTON */}
             <div className="flex gap-4 w-[60%]">
-              <button
-                className="bg-green-800 py-3 px-4 text-slate-100 rounded-xl flex-1"
+              <motion.button
+                className="bg-green-800 py-3 px-4 w-[60%] text-slate-100 rounded-xl"
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
                 onClick={() => previousStep()}
               >
                 Précédent
-              </button>
+              </motion.button>
             </div>
           </div>
         </div>
