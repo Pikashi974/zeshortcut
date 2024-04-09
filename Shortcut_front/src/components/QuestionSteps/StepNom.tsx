@@ -17,11 +17,11 @@ const StepNom = () => {
         <div className="flex-1 flex flex-col justify-center p-4 gap-16 pl-20">
           {/* FORM */}
           <div className="flex flex-col gap-4 p-2">
-            <p className="text-3xl my-10">Quel est votre nom</p>
+            <p className="text-3xl my-10">Quel est ton prénom ?</p>
             <input
               type="text"
               name="name"
-              placeholder="Nom ..."
+              placeholder="Prénom ..."
               className="bg-green-50 p-2 rounded-xl w-[60%] mb-5 border-2 border-green-900"
             />
 

@@ -9,14 +9,14 @@ function HomePage() {
         <div className="flex-1 flex flex-col justify-center p-4 gap-16 bg-green-50 pl-20">
           <div className="flex flex-col gap-4">
             <h1 className=" text-6xl text-red-600">Shortcut</h1>
-            <p className="text-3xl mb-8">Le raccourci vers le bonheur</p>
+            <p className="text-3xl mb-8">Le raccourci vers la santé</p>
             <p className="text-lg text-gray-500">
               Réponds aux questions et obtiens ton régime personalisé !
             </p>
           </div>
 
           <a href="/question">
-            < Button text="Commencez" />
+            < Button text="C'est parti !" />
           </a>
         </div>
 

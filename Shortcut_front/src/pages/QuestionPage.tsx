@@ -6,8 +6,6 @@ import StepPoids from "../components/QuestionSteps/StepPoids";
 import StepTaille from "../components/QuestionSteps/StepTaille";
 import StepActivite from "../components/QuestionSteps/StepActivite";
 import StepGenre from "../components/QuestionSteps/StepGenre";
-import StepNbJourEntrainement from "../components/QuestionSteps/StepNbJourEntrainement";
-import StepIntensiteEntrainement from "../components/QuestionSteps/StepIntensiteEntrainement";
 import StepAge from "../components/QuestionSteps/StepAge";
 
 
@@ -21,8 +19,6 @@ function QuestionPage() {
       <StepTaille />
       <StepPoids />
       <StepActivite />
-      <StepNbJourEntrainement />
-      <StepIntensiteEntrainement />
       <StepEmail />
       <StepSubmit />
     </Wizard>

@@ -17,7 +17,7 @@ const StepPoids = () => {
         <div className="flex-1 flex flex-col justify-center p-4 gap-16 pl-20">
           {/* FORM */}
           <div className="flex flex-col gap-4 p-2">
-            <p className="text-3xl my-10">Quel est votre poids en kg</p>
+            <p className="text-3xl my-10">Ton poids en kilogramme</p>
             <input
               type="number"
               name="poids"

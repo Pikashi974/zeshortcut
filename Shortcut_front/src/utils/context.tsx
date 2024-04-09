@@ -22,6 +22,16 @@ export const AgeContext = () => {
   });
 };
 
+export const CalorieContext = () => {
+  return createContext<{
+    calorie: number;
+    setCalorie: (value: number) => void;
+  }>({
+    calorie: 0,
+    setCalorie: () => null,
+  });
+};
+
 export const TailleContext = () => {
   return createContext<{
     taille: number;
@@ -42,25 +52,6 @@ export const PoidsContext = () => {
   });
 };
 
-export const NbJourEntrainementContext = () => {
-  return createContext<{
-    NbJourEntrainement: number;
-    setNbJourEntrainement: (value: number) => void;
-  }>({
-    NbJourEntrainement: 0,
-    setNbJourEntrainement: () => null,
-  });
-};
-
-export const IntensiteEntrainementContext = () => {
-  return createContext<{
-    intensiteEntrainement: string;
-    setintensiteEntrainement: (value: string) => void;
-  }>({
-    intensiteEntrainement: "",
-    setintensiteEntrainement: () => null,
-  });
-};
 
 export const ActiviteContext = () => {
   return createContext<{

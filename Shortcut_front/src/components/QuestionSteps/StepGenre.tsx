@@ -7,19 +7,37 @@ const StepGenre = () => {
 
   const { setGenre } = useContext(GenreContext);
 
+  const nextHomme = () => {
+    setGenre(true)
+    nextStep();
+  }
+
+  const nextFemme = () => {
+    setGenre(false)
+    nextStep();
+  }
+
   return (
     <div className="flex flex-col min-h-screen fontFasterStroker">
       <div className="flex-1 flex justify-between">
         <div className="flex-1 flex flex-col justify-center p-4 gap-16 pl-20">
           {/* FORM */}
-          <div className="flex flex-col gap-4 p-2">
-            <p className="text-3xl my-10">Quel est votre genre ?</p>
-            <div>
-              <div onClick={() => setGenre(true)}>
+          <div className="flex flex-col gap-4 p-2 mb-4">
+            <p className="text-3xl my-10">Choisis ton sexe:</p>
+            <div className="flex gap-2 text-2xl">
+              <div
+                className="flex-1 hover:scale-105 flex cursor-pointer items-center justify-center bg-yellow-200 rounded-xl p-2 w-[60%] h-[30vh]"
+                onClick={nextHomme}
+              >
+                <p>🧑</p>
                 <p>Homme</p>
               </div>
 
-              <div onClick={() => setGenre(false)}>
+              <div
+                className="flex-1 hover:scale-105 flex cursor-pointer items-center justify-center bg-green-200 rounded-xl p-2 w-[60%]"
+                onClick={nextFemme}
+              >
+                <p>👩</p>
                 <p>Femme</p>
               </div>
             </div>
@@ -31,12 +49,6 @@ const StepGenre = () => {
                 onClick={() => previousStep()}
               >
                 Précédent
-              </button>
-              <button
-                className="bg-green-800 py-3 px-4 text-slate-100 rounded-xl flex-1"
-                onClick={() => nextStep()}
-              >
-                Suivant
               </button>
             </div>
           </div>

@@ -16,8 +16,8 @@ const StepTaille = () => {
       <div className="flex-1 flex justify-between">
         <div className="flex-1 flex flex-col justify-center p-4 gap-16 pl-20">
           {/* FORM */}
-          <div className="flex flex-col gap-4 p-2">
-            <p className="text-3xl my-10">Quel est votre taille en cm</p>
+          <div className="flex flex-col gap-4 p-4">
+            <p className="text-3xl my-10">Ta taille en centimètre</p>
             <input
               type="number"
               name="taille"

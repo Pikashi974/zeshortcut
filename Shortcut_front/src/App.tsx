@@ -10,9 +10,7 @@ export const PoidsContext = context.PoidsContext();
 export const TailleContext = context.TailleContext();
 export const GenreContext = context.GenreContext();
 export const ActiviteContext = context.ActiviteContext();
-export const NbJourEntrainementContext = context.NbJourEntrainementContext();
-export const IntensiteEntrainementContext =
-  context.IntensiteEntrainementContext();
+export const CalorieContext = context.CalorieContext();
 
 function App() {
   const [nom, setNom] = useState("");
@@ -21,9 +19,8 @@ function App() {
   const [taille, setTaille] = useState(0);
   const [genre, setGenre] = useState(false);
   const [activite, setActivite] = useState("");
-  const [NbJourEntrainement, setNbJourEntrainement] = useState(0);
-  const [intensiteEntrainement, setintensiteEntrainement] = useState("");
   const [email, setEmail] = useState("");
+  const [calorie, setCalorie] = useState(0);
 
   return (
     <NomContext.Provider value={{ nom, setNom }}>
@@ -33,23 +30,11 @@ function App() {
             <TailleContext.Provider value={{ taille, setTaille }}>
               <GenreContext.Provider value={{ genre, setGenre }}>
                 <ActiviteContext.Provider value={{ activite, setActivite }}>
-                  <NbJourEntrainementContext.Provider
-                    value={{
-                      NbJourEntrainement,
-                      setNbJourEntrainement,
-                    }}
-                  >
-                    <IntensiteEntrainementContext.Provider
-                      value={{
-                        intensiteEntrainement,
-                        setintensiteEntrainement,
-                      }}
-                    >
+                  <CalorieContext.Provider value={{ calorie, setCalorie }}>
                       <>
                         <RouterProvider router={router} />
                       </>
-                    </IntensiteEntrainementContext.Provider>
-                  </NbJourEntrainementContext.Provider>
+                  </CalorieContext.Provider>
                 </ActiviteContext.Provider>
               </GenreContext.Provider>
             </TailleContext.Provider>
