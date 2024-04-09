@@ -32,7 +32,6 @@
     }
   },
 
-
   {
     "nom": "Petit-Dejeuner Dur",
     "etiquette": ["Petit-déjeuner"],
@@ -68,10 +67,9 @@
     "etiquette": ["Diner"],
     "recette": {
       "Saumon": 1,
-      "Seintan": 1
+      "Seintan": 2
     }
   },
-
 
   {
     "nom": "Diner Dur",
@@ -107,7 +105,32 @@
       "Salade": 1,
       "Choux": 1
     }
+  },
+
+  {
+    "nom": "PDT constant",
+    "etiquette": ["Petit-déjeuner"],
+    "recette": {
+      "Graines": 0.3,
+      "Oeuf": 0.2
+    }
+  },
+
+  {
+    "nom": "Dej constant",
+    "etiquette": ["Déjeuner"],
+    "recette": {
+      "Poisson": 0.3,
+      "Amande": 0.2
+    }
+  },
+
+  {
+    "nom": "Din constant",
+    "etiquette": ["Diner"],
+    "recette": {
+      "Amande": 0.3,
+      "Fromage": 0.1
+    }
   }
-
-
 ]
