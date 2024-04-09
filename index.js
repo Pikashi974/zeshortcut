@@ -36,28 +36,16 @@ app.get("/repas", async (req, res) => {
 app.get("/src/js/index.js", function (req, res) {
   res.sendFile(path.join(__dirname + "/src/js/index.js"));
 });
-app.post("/repas/maigrir", async (req, res) => {
+
+app.post("/repas", async (req, res) => {
   console.log("Hello");
   var data = require("./src/aliment/repas.json");
   let listeRepas = data.filter(
     (repas) =>
-      calcCalorieRepas(repas) <= parseFloat(req.body.calories) &&
-      calcGlucidesRepas(repas) <= parseFloat(req.body.glucides) &&
-      calcLipidesRepas(repas) <= parseFloat(req.body.lipides) &&
-      calcProteinesRepas(repas) <= parseFloat(req.body.proteines)
-  );
-  sendMail(req, listeRepas);
-  res.send(listeRepas);
-});
-app.post("/repas/grossir", async (req, res) => {
-  console.log("Hello");
-  var data = require("./src/aliment/repas.json");
-  let listeRepas = data.filter(
-    (repas) =>
-      calcCalorieRepas(repas) >= parseFloat(req.body.calories) &&
-      calcGlucidesRepas(repas) >= parseFloat(req.body.glucides) &&
-      calcLipidesRepas(repas) >= parseFloat(req.body.lipides) &&
-      calcProteinesRepas(repas) >= parseFloat(req.body.proteines)
+      0.8 < calcCalorieRepas(repas) / parseFloat(req.body.calories) < 1.2 &&
+      0.8 < calcGlucidesRepas(repas) / parseFloat(req.body.glucides) < 1.2 &&
+      0.8 < calcLipidesRepas(repas) / parseFloat(req.body.lipides) < 1.2 &&
+      0.8 < calcProteinesRepas(repas) / parseFloat(req.body.proteines) < 1.2
   );
   sendMail(req, listeRepas);
   res.send(listeRepas);
@@ -234,7 +222,19 @@ async function sendMail(req, liste) {
                       </td>
                     </tr>`;
                       } else {
-                        texte = `Aucun repas prévu pour votre ${repas}`;
+                        texte = `
+                        <tr>
+                      <td class="es-m-p20b" align="left" style="padding:0;Margin:0;width:270px">
+                        <table cellpadding="0" cellspacing="0" width="100%" role="presentation"
+                          style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                          <tbody>
+                            <tr>
+                              <td align="left" style="padding:0;Margin:0">
+                                <p
+                                  style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:Lexend, Arial, sans-serif;line-height:18px;color:#2A1B0F;font-size:12px">
+                                  Aucun repas prévu pour votre ${repas}</p>
+                              </td>
+                            </tr>`;
                       }
                       return texte;
                     })}
@@ -249,7 +249,6 @@ async function sendMail(req, liste) {
   </tbody>
 </table>`, // html body
   });
-  res.send(info);
 }
 
 function calcCalorieRepas(repas) {
