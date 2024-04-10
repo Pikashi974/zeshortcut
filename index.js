@@ -42,10 +42,13 @@ app.post("/repas", async (req, res) => {
   var data = require("./src/aliment/repas.json");
   let listeRepas = data.filter(
     (repas) =>
-      range((3 * calcCalorieRepas(repas)) / parseFloat(req.body.calories)) &&
-      range(calcGlucidesRepas(repas) / parseFloat(req.body.glucides)) &&
-      range(calcLipidesRepas(repas) / parseFloat(req.body.lipides)) &&
-      range(calcProteinesRepas(repas) / parseFloat(req.body.proteines))
+      range(
+        (3 * calcCalorieRepas(repas)) / parseFloat(req.body.calories),
+        10
+      ) &&
+      range(calcGlucidesRepas(repas) / parseFloat(req.body.glucides), 80) &&
+      range(calcLipidesRepas(repas) / parseFloat(req.body.lipides), 50) &&
+      range(calcProteinesRepas(repas) / parseFloat(req.body.proteines), 10)
   );
   sendMail(req, listeRepas);
   res.send(listeRepas);
@@ -178,10 +181,10 @@ async function sendMail(req, liste) {
                           element.etiquette.includes(repas) &&
                           listeChosen.includes(element.nom) == false
                       );
-
-                      if (chosenRepas) {
-                        let rand = Math.floor(
-                          Math.random() * listeChosen.length
+                      if (chosenRepas.length > 0) {
+                        let rand = Math.max(
+                          Math.floor(Math.random() * chosenRepas.length),
+                          0
                         );
                         chosenRepas = chosenRepas[rand];
                         listeChosen.push(chosenRepas.nom);
@@ -223,7 +226,7 @@ async function sendMail(req, liste) {
                                         " " +
                                         element
                                     )
-                                    .join(", ")}</p>
+                                    .join("")}</p>
                               </td>
                             </tr>
                             `;
@@ -302,6 +305,7 @@ function calcProteinesRepas(repas) {
   });
   return totalCal;
 }
-function range(valeur) {
-  return 0.8 <= valeur && valeur <= 1.2;
+function range(valeur, range) {
+  let percent = range / 100;
+  return 1 - percent <= valeur && valeur <= 1 + percent;
 }
