@@ -15,12 +15,18 @@ class IndexController extends AbstractController
         //     'message' => 'Welcome to your new controller!',
         //     'path' => 'src/Controller/IndexController.php',
         // ]);
+          $json = file_get_contents('php://input');
+          $data=json_decode($json);
+        $nom = $data->nom;
+        $email = $data->email;
+        $totalKcal = $data->calorie;
 
-        $totalKcal = $_POST['calorie'];
-$nbJour = $_POST['nbJour'];
+// $nbJour = $_POST['nbJour'];
+$nbJour = 3;
     $totalProtein = $totalKcal * 0.2;
     $totalLipide = $totalKcal * 0.3;
     $totalGlucide = $totalKcal * 0.5;
+    
 
     $proteinPerDay = $totalProtein / 4;
     $lipidePerDay = $totalLipide / 9;
@@ -37,24 +43,25 @@ $nbJour = $_POST['nbJour'];
     // round ($glucide), "g De glucide <br>";
 
 
-$curl = curl_init();
 
-curl_setopt_array($curl, [
-  CURLOPT_URL => "http://192.168.0.69:5001/repas/grossir",
-  CURLOPT_RETURNTRANSFER => true,
-  CURLOPT_ENCODING => "",
-  CURLOPT_MAXREDIRS => 10,
-  CURLOPT_TIMEOUT => 30,
-  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST => "POST",
-  CURLOPT_POSTFIELDS => "{\n  \"calories\" : ".$totalKcal.",\n  \"proteines\" : ".$protein.",\n  \"lipides\" : ".$lipide.",\n  \"glucides\" : ".$glucide."\n}\n",
-  CURLOPT_HTTPHEADER => [
-    "Accept: */*",
-    "Content-Type: application/json",
+  $curl = curl_init();
+  curl_setopt_array($curl, [
+    CURLOPT_URL => "http://192.168.0.69:5001/repas/",
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_ENCODING => "",
+    CURLOPT_MAXREDIRS => 10,
+    CURLOPT_TIMEOUT => 30,
+    CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+    CURLOPT_CUSTOMREQUEST => "POST",
+    CURLOPT_POSTFIELDS => "{\n  \"calories\" : ".$totalKcal.",\n  \"proteines\" : ".$protein.",\n  \"lipides\" : ".$lipide.",\n  \"glucides\" : ".$glucide.",\n  \"nom\" : \"".$nom."\",\n  \"email\" : \"".$email."\"}\n",
+    CURLOPT_HTTPHEADER => [
+      "Accept: */*",
+      "Content-Type: application/json",
+      
+    ],
+  ]);
 
-  ],
-]);
-
+  
 $response = curl_exec($curl);
 $err = curl_error($curl);
 
@@ -65,12 +72,7 @@ curl_close($curl);
 // } else {
 //   echo $response;
 // }
-$repas = new JsonResponse($response);
+return new JsonResponse($response);
 
-$jsonData = json_encode($repas);
-
-echo $jsonData;
-$decodeData = json_decode($jsonData, true);
-return $decodeData;
     }
 }
